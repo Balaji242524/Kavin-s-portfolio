@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: white;
+    color: #333;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Fix header issue */
+header {
+    background: radial-gradient(circle, rgba(214,65,249,1) 0%, rgba(25,0,147,1) 100%);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Hero Section */
+#hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 28px;
+    background: radial-gradient(circle, rgba(45,162,255,1) 0%, rgba(168,242,199,1) 100%);
+    color: white;
+    padding-top: 80px;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Add padding to sections to fix visibility issue */
+section {
+    padding: 100px 20px;
+}
+
+/* Skills & Strengths */
+.skills-grid, .strength-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.skill, .strength-list li {
+    background: radial-gradient(circle, rgba(214,65,249,1) 0%, rgba(25,0,147,1) 100%);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#contact {
+    padding: 40px 20px;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.contact-btn {
+    text-decoration: none;
+    background: radial-gradient(circle, rgba(214,65,249,1) 0%, rgba(25,0,147,1) 100%);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.contact-btn:hover {
+    background: radial-gradient(circle, rgba(25,0,147,1) 0%, rgba(214,65,249,1) 100%);
+}
+
+/* Mobile Responsive Menu */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: rgba(25,0,147,1);
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 15px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+} 
+footer {
+    padding: 20px;
+    background: rgb(214,65,249);
+background: radial-gradient(circle, rgba(214,65,249,1) 0%, rgba(25,0,147,1) 100%);
+    color: white;
+}
+
