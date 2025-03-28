@@ -99,6 +99,40 @@ section {
     font-weight: bold;
 }
 
+/* Certifications Section */
+#certifications {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.certifications-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cert-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cert-card img {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+}
+
+.cert-card:hover {
+    transform: scale(1.05);
+}
+
+
 #contact {
     padding: 40px 20px;
 }
